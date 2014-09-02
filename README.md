@@ -7,3 +7,6 @@ Countries flags developed using only CSS3. | [Demo](http://raphaelfabeni.github.
 
 Thanks for [Daniel Eden](https://twitter.com/_dte) for some animations in awesome [animate.css](http://daneden.github.io/animate.css/).
 
+## License
+
+MIT License © Raphael Fabeni

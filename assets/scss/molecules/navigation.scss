@@ -14,7 +14,8 @@
                 z-index: 99;
             }
 
-            .header {
+            .header,
+            .footer {
                 background-color: #333;
                 padding: 15px 10px;
             }
@@ -35,4 +36,15 @@
                 text-align: center;
                 text-shadow: 1px 1px 1px #000;
             }
+
+        /*  Footer
+            ========================================================================== */
+            .footer p {
+                font-size: 14px;
+                text-align: center;
+                margin: 0;
+                color: #fff;
+            }
+
+            .footer p + p { margin-top: 10px; }
     }

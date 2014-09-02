@@ -1,0 +1,29 @@
+/*  Italy
+    ========================================================================== */
+    .italy { background-color: #afc8dc; }
+
+    .italy .flag {
+        background-color: #fff;
+        @include animation(zoomIn 1s ease both);
+    }
+
+    .italy .flag:before,
+    .italy .flag:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 101%;
+        width: 33%;
+    }
+
+    .italy .flag:before {
+        right: 0;
+        background-color: #CE2B37;
+        @include animation(zoomInDown 0.75s ease 0.15s both);
+    }
+
+    .italy .flag:after {
+        left: 0;
+        background-color: #009246;
+        @include animation(zoomInDown 0.75s ease 0.15s both);
+    }

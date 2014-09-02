@@ -1,0 +1,34 @@
+/*  Turkey
+    ========================================================================== */
+    .turkey { background-color: #afeeee; }
+
+    .turkey .flag {
+        background-color: #E30A17;
+        @include animation(fadeIn 1s ease both);
+    }
+
+    .turkey .flag:before {
+        @include border-radius(50%);
+        @include box-shadow(-20px 0 0 17px #fff);
+        content: "";
+        height: 40%;
+        left: 27%;
+        position: absolute;
+        top: 30%;
+        width: 26%;
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) both 1s);
+    }
+
+    .turkey .flag:after {
+        content: "★";
+        color: #fff;
+        position: absolute;
+        font-size: 92px;
+        line-height: 92px;
+        height: 92px;
+        margin-top: -48px;
+        left: 48%;
+        top: 50%;
+        @include transform(rotate(-21deg));
+        @include animation(rotateIn 1s ease both 1.25s);
+    }

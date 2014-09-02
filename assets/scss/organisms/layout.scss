@@ -1,0 +1,44 @@
+.country .flag,
+.country .flag:before,
+.country .flag:after,
+.country .flag div,
+.country .flag div:after,
+.country .flag div:before {
+    -webkit-animation-play-state: paused;
+       -moz-animation-play-state: paused;
+        -ms-animation-play-state: paused;
+         -o-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+.country.active .flag,
+.country.active .flag:before,
+.country.active .flag:after,
+.country.active .flag div,
+.country.active .flag div:before,
+.country.active .flag div:after {
+    -webkit-animation-play-state: running;
+       -moz-animation-play-state: running;
+        -ms-animation-play-state: running;
+         -o-animation-play-state: running;
+            animation-play-state: running;
+}
+
+// var elements = $('.element');
+// $(window).on('scroll', function() {
+//   var halfHeight = window.innerHeight / 2,
+//       size = 100,
+//       rangePosition = {
+//         top: halfHeight - (size/2),
+//         bottom: halfHeight + (size/2)
+//       }
+//   /**/
+//   for( var i = 0; i< elements.length; i++ ) {
+//     var aloha = elements[i].getBoundingClientRect();
+//     if( aloha.top + aloha.height > rangePosition.top && aloha.top < rangePosition.bottom  ) {
+//       elements[i].classList.add('active');
+//     }else{
+//       elements[i].classList.remove('active');
+//     }
+//   }  
+// });

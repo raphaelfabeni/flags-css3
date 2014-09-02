@@ -1,0 +1,28 @@
+/*  Peru
+    ========================================================================== */
+    .peru { background-color: #84c3c9; }
+
+    .peru .flag {
+        background-color: #fff;
+        @include animation(rotateIn 1s ease both);
+    }
+
+    .peru .flag:before,
+    .peru .flag:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 101%;
+        width: 33%;
+        background-color: #D91023;
+    }
+
+    .peru .flag:before {
+        right: 0;
+        @include animation(zoomIn 0.75s ease 0.75s both);
+    }
+
+    .peru .flag:after {
+        left: 0;
+        @include animation(zoomIn 0.75s ease 0.75s both);
+    }

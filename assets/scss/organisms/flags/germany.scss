@@ -1,0 +1,31 @@
+/*  Germany
+    ========================================================================== */
+    .germany { background-color: #84c3c9; }
+    
+    .germany .flag > div,
+    .germany .flag:before,
+    .germany .flag:after {
+        position: absolute;
+        width: 100%;
+        height: 33%;
+        content: '';
+    }
+
+    .germany .flag > div {
+        top: 0;
+        height: 34%;
+        background-color: #000;
+        @include animation(fadeInRight 1s ease both);
+    }
+
+    .germany .flag:before {
+        top: 34%;
+        background-color: #DD0000;
+        @include animation(fadeInLeft 1s ease both);
+    }
+
+    .germany .flag:after {
+        top: 67%;
+        background-color: #FFCE00;
+        @include animation(fadeInRight 1s ease both);
+    }

@@ -1,0 +1,29 @@
+/*  Netherlands
+    ========================================================================== */
+    .netherlands { background-color: #d8ba81; }
+
+    .netherlands .flag {
+        background-color: #AE1C28;
+        @include animation(width 1s ease both);
+    }
+
+    .netherlands .flag:before,
+    .netherlands .flag:after {
+        content: '';
+        position: absolute;
+        height: 33%;
+        left: 0;
+        width: 100%;
+    }
+
+    .netherlands .flag:before {
+        background-color: #fff;
+        bottom: 32%;     
+        @include animation(fadeInLeft 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both);
+    }
+
+    .netherlands .flag:after {
+        background-color: #21468B;
+        bottom: -1px;
+        @include animation(fadeInRight 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0.25s both);
+    }    

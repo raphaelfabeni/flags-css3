@@ -1,0 +1,43 @@
+/*  Ghana
+    ========================================================================== */
+    .ghana { background-color: #9c98ef; }
+
+    .ghana .flag {
+        background-color: #fcd116;
+        @include animation(widthFlag 1s ease both);
+    }
+
+    .ghana .flag:before,
+    .ghana .flag:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 33%;
+    }
+
+    .ghana .flag:before {
+        top: 0;
+        background-color: #ce1126;
+        @include animation(fadeInRight 1s ease both 0.5s);
+    }
+
+    .ghana .flag:after {
+        bottom: -1px;
+        background-color: #006b3f;
+        @include animation(fadeInRight 1s ease both 0.5s);
+    }
+    
+    .ghana .flag > div:before {
+        content: "★";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 110px;
+        height: 130px;
+        line-height: 135px;
+        font-size: 125px;
+        margin: -67px 0 0 -56px;
+        color: #000;
+        @include animation(rotateIn 0.5s ease both 1s);
+    }

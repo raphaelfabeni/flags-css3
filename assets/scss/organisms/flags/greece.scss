@@ -1,0 +1,42 @@
+/*  Greece
+    ========================================================================== */
+    .greece { background-color: #f6d2af; }
+
+    .greece .flag {
+        @include vertical-gradient(#0D5EAF, #0D5EAF 50%, #ffffff 50%);
+        @include background-size(100% 66px);
+        @include animation(fadeInLeft 0.66s ease both);
+    }
+
+    .greece .flag > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 37%;
+        height: 56%;
+        background-color: #0D5EAF;
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both);
+    }
+
+    .greece .flag > div:before,
+    .greece .flag > div:after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .greece .flag > div:before {
+        height: 32px;
+        top: 50%;
+        margin-top: -16px;
+        width: 100%;
+        @include animation(fadeInLeft 1s ease both 1s);
+    }
+
+    .greece .flag > div:after {
+        width: 32px;
+        left: 50%;
+        margin-left: -16px;
+        height: 100%;
+        @include animation(fadeInDown 1s ease both 1s);
+    }

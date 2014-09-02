@@ -1,0 +1,41 @@
+/*  Tunisia
+    ========================================================================== */
+    .tunisia { background-color: #d3dfdf; }
+
+    .tunisia .flag {
+        background-color: #E30A17;
+        background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 50%, #E30A17 50%, #E30A17 100%) #E30a17;
+        background:    -moz-radial-gradient(center, ellipse cover,  #ffffff 50%,  #E30A17 50%, #E30A17 100%) #E30a17;
+        background:      -o-radial-gradient(center, ellipse cover,  #ffffff 50%, #E30A17 50%, #E30A17 100%) #E30a17;
+        background:     -ms-radial-gradient(center, ellipse cover,  #ffffff 50%, #E30A17 50%, #E30A17 100%) #E30a17;
+        background:         radial-gradient(ellipse at center,  #ffffff 50%, #E30A17 50%, #E30A17 100%) #E30a17;
+        @include background-size(47% 71%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include animation(flipInX 1.5s ease 0.25s both);
+        @extend %back-face;
+    }
+
+    .tunisia .flag:before {
+        @include border-radius(50%);
+        @include box-shadow(-13px 0 0 12px #E30A17);
+        content: "";
+        height: 30%;
+        left: 43%;
+        position: absolute;
+        top: 35%;
+        width: 20%;
+        @include animation(fadeInRight 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) both 1s);
+    }
+
+    .tunisia .flag:after {
+        content: "★";
+        color: #E30A17;
+        position: absolute;
+        font-size: 85px;
+        line-height: 85px;
+        left: 45%;
+        top: 35%;
+        @include transform(rotate(-17deg));
+        @include animation(fadeInLeft 1s ease both 1.25s);
+    }

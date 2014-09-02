@@ -1,0 +1,91 @@
+/*  Venezuela
+    ========================================================================== */
+    .venezuela { background-color: #66cdaa; }
+
+    .venezuela .flag {
+        background-color: #FFCC00;
+        @include animation(heightFlag 1s ease both);
+    }
+    
+    .venezuela .flag:before,
+    .venezuela .flag:after {
+        position: absolute;
+        width: 100%;
+        height: 33%;
+        content: '';
+    }
+
+    .venezuela .flag:before {
+        bottom: 32%;
+        background-color: #00247D;
+        @include animation(fadeInUp 1s ease both 0.5s);
+    }
+
+    .venezuela .flag:after {
+        bottom: -1px;
+        background-color: #CF142B;
+        @include animation(fadeInUp 1s ease both 0.5s);
+    }
+
+    .venezuela .star:before,
+    .venezuela .star:after {
+        content: "★";
+        color: #fff;
+        font-size: 33px;
+        line-height: 33px;
+        position: absolute;
+    }
+
+    .venezuela .star-01:before {
+        left: 28%;
+        top: 54%;
+        @include animation(fadeIn 0.5s ease both 1s);
+    }
+
+    .venezuela .star-01:after {
+        left: 32%;
+        top: 45%;
+        @include transform(rotate(22deg));
+        @include animation(fadeIn 0.5s ease both 1.15s);
+    }
+
+    .venezuela .star-02:before {
+        left: 37.5%;
+        top: 38%;
+        @include transform(rotate(43deg));
+        @include animation(fadeIn 0.5s ease both 1.30s);
+    }
+
+    .venezuela .star-02:after {
+        left: 44%;
+        top: 35%;
+        @include transform(rotate(60deg));
+        @include animation(fadeIn 0.5s ease both 1.45s);
+    }
+
+    .venezuela .star-03:before {
+        left: 51%;
+        top: 35%;
+        @include transform(rotate(81deg));
+        @include animation(fadeIn 0.5s ease both 1.60s);
+    }
+
+    .venezuela .star-03:after {
+        left: 57.5%;
+        top: 39.5%;
+        @include transform(rotate(102deg));
+        @include animation(fadeIn 0.5s ease both 1.75s);
+    }
+
+    .venezuela .star-04:before {
+        left: 63%;
+        top: 46%;
+        @include transform(rotate(123deg));
+        @include animation(fadeIn 0.5s ease both 1.90s);
+    }
+
+    .venezuela .star-04:after {
+        left: 66%;
+        top: 54%;
+        @include animation(fadeIn 0.5s ease both 2.10s);
+    }

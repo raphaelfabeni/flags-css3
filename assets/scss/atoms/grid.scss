@@ -1,0 +1,52 @@
+/*  ==========================================================================
+    Grid
+    ========================================================================== */
+    body {
+        width: 100%;
+    }
+
+
+    @media only screen {
+
+        .main { overflow: hidden; }
+
+        /*  Country
+            ========================================================================== */
+            .country {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 485px;
+                // @include box-shadow(0 0 15px 0 rgba(0,0,0,0.5) inset);
+
+                //background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/800px-Flag_of_Honduras.svg.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                @include background-size(450px 295px);
+            }
+
+            .flag {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -147px 0 0 -225px;
+                width: 100%;
+                max-width: 450px;
+                height: 295px;
+                overflow: hidden;
+            }
+    }
+
+    /*
+     * CSS for devices with resolution higher than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+        /*  Country
+            ========================================================================== */
+            .country {
+                float: left;
+                width: 50%;
+            }
+    }

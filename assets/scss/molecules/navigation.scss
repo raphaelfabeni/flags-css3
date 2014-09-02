@@ -1,0 +1,38 @@
+/*  ==========================================================================
+    Navigation
+    ========================================================================== */
+
+    @media only screen {
+
+        /*  Header
+            ========================================================================== */
+            .fork img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 0;
+                z-index: 99;
+            }
+
+            .header {
+                background-color: #333;
+                padding: 15px 10px;
+            }
+
+            .title {
+                color: #fff;
+                margin: 0;
+                font-size: 38px;
+                letter-spacing: -1px;
+                text-align: center;
+                text-shadow: 1px 1px 1px #000;
+            }
+
+            .subtitle {
+                margin: 5px 0 0;
+                font-size: 24px;
+                color: #999;
+                text-align: center;
+                text-shadow: 1px 1px 1px #000;
+            }
+    }

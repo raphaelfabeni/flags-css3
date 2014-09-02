@@ -1,0 +1,44 @@
+/*  Cameroon
+    ========================================================================== */
+    .cameroon {
+        background-color: #abdef5;
+    }
+
+    .cameroon .flag {
+        background-color: #CE1126;
+        @include animation(fadeInUp 0.5s ease-in both);
+    }
+
+    .cameroon .flag:before,
+    .cameroon .flag:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 33%;
+        top: 0;
+    }
+
+    .cameroon .flag:before {
+        background-color: #007A5E;
+        left: 0;
+        @include animation(fadeInRight 1s ease 0.5s both);
+    }
+
+    .cameroon .flag:after {
+        right: 0;
+        background-color: #FCD116;
+        @include animation(fadeInLeft 1s ease 0.5s both);
+    }
+
+    .cameroon .flag > div:after {
+        color: #FCD116;
+        position: absolute;
+        content: "★";
+        font-size: 100px;
+        height: 100px;
+        line-height: 1;
+        left: 50%;
+        top: 50%;
+        margin: -50px 0 0 -50px;
+        @include animation(zoomIn 0.75s ease-out 0.75s both);
+    }

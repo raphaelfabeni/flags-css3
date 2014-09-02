@@ -1,0 +1,30 @@
+/*  Finland
+    ========================================================================== */
+    .finland { background-color: #008b8b; }
+
+    .finland .flag {
+        background-color: #fff;
+        @include animation(bounceIn 1s ease both);
+    }
+
+    .finland .flag:before,
+    .finland .flag:after {
+        content: '';
+        position: absolute;
+        background-color: #003580;
+    }
+
+    .finland .flag:before {
+        height: 76px;
+        top: 50%;
+        width: 100%;
+        margin-top: -38px;
+        @include animation(rotateIn 1s ease both 0.5s);
+    }
+
+    .finland .flag:after {
+        height: 101%;
+        width: 73px;
+        left: 28%;
+        @include animation(rotateIn 1s ease both 0.25s);
+    }

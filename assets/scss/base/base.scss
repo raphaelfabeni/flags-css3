@@ -1,0 +1,25 @@
+/*  ==========================================================================
+    Base
+    ========================================================================== */
+    ::-moz-selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    ::selection {
+        background: #666;
+        text-shadow: none;
+        color: #fff;
+    }
+
+    img,
+    object,
+    embed,
+    iframe { max-width: 100%; }
+
+    img { height: auto; }
+
+    *,
+    *:after,
+    *:before { @include box-sizing(); }

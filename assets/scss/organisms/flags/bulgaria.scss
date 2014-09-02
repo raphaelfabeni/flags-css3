@@ -1,0 +1,29 @@
+/*  Bulgaria
+    ========================================================================== */
+    .bulgaria { background-color: #ffabc1; }
+
+    .bulgaria .flag {
+        background-color: #fff;
+        @include animation(heightFlag 1s ease both);
+    }
+
+    .bulgaria .flag:before,
+    .bulgaria .flag:after {
+        content: '';
+        position: absolute;
+        height: 33%;
+        left: 0;
+        width: 100%;
+    }
+
+    .bulgaria .flag:before {
+        background-color: #00966E;
+        bottom: 32%;     
+        @include animation(fadeInDown 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both);
+    }
+
+    .bulgaria .flag:after {
+        background-color: #D62612;
+        bottom: -1px;
+        @include animation(fadeInUp 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0.25s both);
+    }    

@@ -1,0 +1,115 @@
+/*  Israel
+    ========================================================================== */
+    .israel { background-color: #fce79c; }
+
+    .israel .flag {
+        @include vertical-gradient(#fff, #fff 10%, #0038B8 10%, #0038B8 25%, #fff 25%, #fff 75%, #0038B8 75%, #0038B8 90%, #fff 90%);
+        @include animation(widthFlag 1s ease both);
+    }
+
+    .israel .star {
+        left: 37%;
+        top: 29%;
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 93px solid #0038B8;
+        position: absolute;
+        @include animation(fadeInRight 0.75s ease 0.25s both);
+    }
+
+    .israel .star:after {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-top: 93px solid #0038B8;
+        position: absolute;
+        content: '';
+        top: 30px;
+        left: -62px;
+    }
+
+    .israel .center {
+        height: 65px;
+        left: -51px;
+        top: 30px;
+        position: absolute;
+        width: 98px;
+        z-index: 1;
+        @include transform(rotate(90deg) scale(0.45));
+        background-color: #fff;
+    }
+
+    .israel .center:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid #fff;
+    }
+
+    .israel .center:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid #fff;
+    }
+
+    .israel .triangle,
+    .israel .triangle:after,
+    .israel .triangle:before {
+        position: absolute;
+        width: 0; 
+        height: 0; 
+        border-left: 7px solid transparent; 
+        border-right: 7px solid transparent; 
+        border-bottom: 13px solid #fff;
+        z-index: 2;
+    }
+
+    .israel .triangle:after,
+    .israel .triangle:before { content: ''; }
+
+    .israel .triangle-01 {
+        left: 26px;
+        top: 71px;
+    }
+
+    .israel .triangle-01:after {
+        left: -42px;
+        top: 23px;
+        @include transform(rotate(180deg));
+    }
+
+    .israel .triangle-01:before {
+        left: -76px;
+        top: 1px;
+    }
+
+    .israel .triangle-02 {
+        left: 26px;
+        top: 40px;
+        @include transform(rotate(180deg));
+    }
+
+    .israel .triangle-02:after {
+        left: 62px;
+        top: 0;
+    }
+
+    .israel .triangle-02:before {
+        left: 27px;
+        top: 23px;
+        @include transform(rotate(180deg));
+    }

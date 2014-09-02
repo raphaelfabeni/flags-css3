@@ -1,0 +1,28 @@
+/*  Nigeria
+    ========================================================================== */
+    .nigeria { background-color: #f6d35a; }
+
+    .nigeria .flag {
+        background-color: #fff;
+        @include animation(widthFlag 1s ease both);
+    }
+
+    .nigeria .flag:before,
+    .nigeria .flag:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 101%;
+        width: 33%;
+        background-color: #008751;
+    }
+
+    .nigeria .flag:before {
+        right: 0;
+        @include animation(fadeInUp 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both);
+    }
+
+    .nigeria .flag:after {
+        left: 0;
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both);
+    }

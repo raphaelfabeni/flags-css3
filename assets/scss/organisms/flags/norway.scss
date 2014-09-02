@@ -1,0 +1,33 @@
+/*  Norway
+    ========================================================================== */
+    .norway { background-color: #a0e2a9; }
+
+    .norway .flag {
+        @include vertical-gradient(#ef2b2d, #ef2b2d 36%, #fff 36%, #fff 64%, #ef2b2d 64%);
+        @include animation(fadeInRight 1s ease both);
+    }
+
+    .norway .flag:before,
+    .norway .flag:after {
+        content: '';
+        position: absolute;
+        background-color: #002868;
+    }
+
+    .norway .flag:before {
+        height: 38px;
+        top: 50%;
+        width: 100%;
+        margin-top: -19px;
+        @include animation(fadeInLeft 0.75s ease both 0.25s);
+        z-index: 1;
+    }
+
+    .norway .flag:after {
+        height: 101%;
+        width: 39px;
+        left: 36%;
+        margin-left: -19px;
+        @include box-shadow(20px 0px 0px 0px #fff, -20px 0px 0px 0px #fff);
+        @include animation(fadeInDown 0.75s ease both 0.75s);
+    }

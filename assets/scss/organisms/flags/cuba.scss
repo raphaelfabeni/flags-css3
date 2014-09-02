@@ -1,0 +1,35 @@
+/*  Cuba
+    ========================================================================== */
+    .cuba { background-color: #ffd570; }
+
+    .cuba .flag {
+        background-color: #fff;
+        @include vertical-gradient(#fff, #002a8f 50%, #ffffff 50%);
+        @include background-size(100% 40%);
+        @include animation(zoomIn 1s ease both);
+    }
+
+    .cuba .flag:before {
+        position: absolute;
+        border-bottom: 155px solid transparent;
+        border-left: 190px solid #CF142B;
+        border-top: 145px solid transparent;
+        content: '';
+        height: 0;
+        width: 0;
+        z-index: 0;
+        @include animation(fadeInLeft 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.75s both);
+    }
+
+    .cuba .flag:after {
+        position: absolute;
+        left: 4%;
+        top: 50%;
+        height: 110px;
+        margin-top: -55px;
+        content: "★";
+        color: #fff;
+        font-size: 110px;
+        line-height: 110px;
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both);
+    }

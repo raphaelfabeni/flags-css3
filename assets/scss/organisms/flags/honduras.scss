@@ -1,0 +1,56 @@
+/*  Honduras
+    ========================================================================== */
+    .honduras {
+    	background-color: #ddd;
+    }
+
+    .honduras .flag {
+    	@include vertical-gradient(#fff, #0073CF 33%, #fff 33%, #fff 66%, #0073CF 66%);
+    	@include animation(widthFlag 1s ease both);
+    }
+	
+	.honduras .flag:before,
+    .honduras .flag div:after,
+    .honduras .flag div:before {
+    	content: "★";
+    	position: absolute;
+    	font-size: 33px;
+    	line-height: 33px;
+    	color: #0073CF;
+    }
+
+    .honduras .flag:before {
+    	left: 50%;
+    	top: 50%;
+    	margin: -19px 0 0 -16px;
+    	width: 33px;
+    	height: 33px;
+    	@include animation(fadeIn 0.75s ease 1.10s both);
+    }
+
+    .honduras .flag > div:before {
+    	left: 33%;
+    	top: 34%;
+    	@include animation(fadeIn 0.75s ease 1.40s both);
+    }
+
+    .honduras .flag > div:after {
+    	left: 33%;
+    	top: 52%;
+    	@include animation(fadeIn 0.75s ease 1.25s both);
+    }
+
+    .honduras .flag > div + div:before {
+    	right: 33%;
+    	left: auto;
+    	top: 34%;
+    	@include animation(fadeIn 0.75s ease 0.95s both);
+    }
+
+    .honduras .flag > div + div:after {
+    	right: 33%;
+    	left: auto;
+    	top: 52%;
+    	@include animation(fadeIn 0.75s ease 0.8s both);
+    }
+

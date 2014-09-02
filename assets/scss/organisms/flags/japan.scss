@@ -1,0 +1,21 @@
+/*  Japan
+    ========================================================================== */
+    .japan { background-color: #4343bb; }
+
+    .japan .flag {
+        background-color: #fff;
+        @include animation(fadeIn 1s ease both);
+    }
+
+    .japan .flag:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20% 0 0 -20%;
+        width: 40%;
+        height: 60%;
+        background-color: red;
+        @include border-radius(50%);
+        @include animation(bounceIn 1s ease 0.5s both);
+    }

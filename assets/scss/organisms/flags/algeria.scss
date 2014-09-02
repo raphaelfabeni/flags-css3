@@ -1,0 +1,36 @@
+/*  Algeria
+    ========================================================================== */
+    .algeria { background-color: #f98f06; }
+
+    .algeria .flag {
+        background-color: #fff;
+        @include box-shadow(220px 0 0 0 #006233 inset);
+        @include animation(fadeInRight 0.75s ease both, enterAlgeria 1s ease 0.25s both);
+    }
+
+    .algeria .flag:before {
+        @include border-radius(50%);
+        @include box-shadow(-21px 0 0 18px #D21034);
+        content: "";
+        height: 40%;
+        left: 41%;
+        position: absolute;
+        top: 30%;
+        width: 26%;
+        //@include horizontal-gradient(#006233 0%, #006233 26%, #ffffff 26%, #ffffff 100%);
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) both 1s);
+    }
+
+    .algeria .flag:after {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        content: "★";
+        font-size: 93px;
+        line-height: 1;
+        left: 48%;
+        color: #D21034;
+        top: 33%;
+        @include transform(rotate(17deg));
+        @include animation(starAlgeria 0.75s ease both 1s);
+    }

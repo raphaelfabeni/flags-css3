@@ -1,0 +1,131 @@
+/*  USA
+    ========================================================================== */
+    .usa { background-color: #88ddd2; }
+
+    .usa .flag {
+        @include vertical-gradient(#B22234, #B22234 50%, #ffffff 50%);
+        @include background-size(100% 46px);
+        @include animation(fadeInRight 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both);
+    }
+
+    .usa .flag:before {
+        content: '';
+        background-color: #3C3B6E;
+        width: 40%;
+        height: 54.5%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include animation(fadeInDown 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) both 0.5s);
+    }
+
+    .usa .flag .star:before,
+    .usa .flag .star:after {
+        content: "★";
+        font-size: 19px;
+        color: #fff;
+        position: absolute;
+    }
+
+    .usa .star-01:before  { left: 2%;    top: 0;    }
+    .usa .star-01:after   { left: 2%;    top: 11%;  }
+    .usa .star-02:before  { left: 2%;    top: 22%;  }
+    .usa .star-02:after   { left: 2%;    top: 33%;  }
+    .usa .star-03:before  { left: 2%;    top: 44%;  }
+    .usa .star-03:after   { left: 5%;    top: 5%;   }
+    .usa .star-04:before  { left: 5%;    top: 16%;  }
+    .usa .star-04:after   { left: 5%;    top: 27%;  }
+    .usa .star-05:before  { left: 5%;    top: 38%;  }
+    .usa .star-05:after   { left: 8.5%;  top: 0;    }
+    .usa .star-06:before  { left: 8.5%;  top: 11%;  }
+    .usa .star-06:after   { left: 8.5%;  top: 22%;  }
+    .usa .star-07:before  { left: 8.5%;  top: 33%;  }
+    .usa .star-07:after   { left: 8.5%;  top: 44%;  }
+    .usa .star-08:before  { left: 12%;   top: 5%;   }
+    .usa .star-08:after   { left: 12%;   top: 16%;  }
+    .usa .star-09:before  { left: 12%;   top: 27%;  }
+    .usa .star-09:after   { left: 12%;   top: 38%;  }
+    .usa .star-10:before  { left: 15%;   top: 0;    }
+    .usa .star-10:after   { left: 15%;   top: 11%;  }
+    .usa .star-11:before  { left: 15%;   top: 22%;  }
+    .usa .star-11:after   { left: 15%;   top: 33%;  }
+    .usa .star-12:before  { left: 15%;   top: 44%;  }
+    .usa .star-12:after   { left: 18%;   top: 5%;   }
+    .usa .star-13:before  { left: 18%;   top: 16%;  }
+    .usa .star-13:after   { left: 18%;   top: 27%;  }
+    .usa .star-14:before  { left: 18%;   top: 38%;  }
+    .usa .star-14:after   { left: 21.5%; top: 0;    }
+    .usa .star-15:before  { left: 21.5%; top: 11%;  }
+    .usa .star-15:after   { left: 21.5%; top: 22%;  }
+    .usa .star-16:before  { left: 21.5%; top: 33%;  }
+    .usa .star-16:after   { left: 21.5%; top: 44%;  }
+    .usa .star-17:before  { left: 25%;   top: 5%;   }
+    .usa .star-17:after   { left: 25%;   top: 16%;  }
+    .usa .star-18:before  { left: 25%;   top: 27%;  }
+    .usa .star-18:after   { left: 25%;   top: 38%;  }
+    .usa .star-19:before  { left: 28%;   top: 0;    }
+    .usa .star-19:after   { left: 28%;   top: 11%;  }
+    .usa .star-20:before  { left: 28%;   top: 22%;  }
+    .usa .star-20:after   { left: 28%;   top: 33%;  }
+    .usa .star-21:before  { left: 28%;   top: 44%;  }
+    .usa .star-21:after   { left: 31.5%; top: 5%;   }
+    .usa .star-22:before  { left: 31.5%; top: 16%;  }
+    .usa .star-22:after   { left: 31.5%; top: 27%;  }
+    .usa .star-23:before  { left: 31.5%; top: 38%;  }
+    .usa .star-23:after   { left: 34.5%; top: 0;    }
+    .usa .star-24:before  { left: 34.5%; top: 11%;  }
+    .usa .star-24:after   { left: 34.5%; top: 22%;  }
+    .usa .star-25:before  { left: 34.5%; top: 33%;  }
+    .usa .star-25:after   { left: 34.5%; top: 44%;  }
+
+    .usa .star-01:before { @include animation(fadeIn 1s ease both 1s); }
+    .usa .star-03:after  { @include animation(fadeIn 1s ease both 1.05s); }
+    .usa .star-06:before { @include animation(fadeIn 1s ease both 1.10s); }
+    .usa .star-08:after  { @include animation(fadeIn 1s ease both 1.15s); }
+    .usa .star-11:before { @include animation(fadeIn 1s ease both 1.20s); }
+    .usa .star-13:after  { @include animation(fadeIn 1s ease both 1.25s); }
+    .usa .star-16:before { @include animation(fadeIn 1s ease both 1.30s); }
+    .usa .star-18:after  { @include animation(fadeIn 1s ease both 1.35s); }
+    .usa .star-21:before { @include animation(fadeIn 1s ease both 1.40s); }
+    .usa .star-16:after  { @include animation(fadeIn 1s ease both 1.45s); }
+    .usa .star-14:before { @include animation(fadeIn 1s ease both 1.50s); }
+    .usa .star-11:after  { @include animation(fadeIn 1s ease both 1.55s); }
+    .usa .star-09:before { @include animation(fadeIn 1s ease both 1.60s); }
+    .usa .star-06:after  { @include animation(fadeIn 1s ease both 1.65s); }
+    .usa .star-04:before { @include animation(fadeIn 1s ease both 1.70s); }
+    .usa .star-01:after  { @include animation(fadeIn 1s ease both 1.75s); }
+    .usa .star-02:before { @include animation(fadeIn 1s ease both 1.80s); }
+    .usa .star-04:after  { @include animation(fadeIn 1s ease both 1.85s); }
+    .usa .star-07:before { @include animation(fadeIn 1s ease both 1.90s); }
+    .usa .star-09:after  { @include animation(fadeIn 1s ease both 1.95s); }
+    .usa .star-12:before { @include animation(fadeIn 1s ease both 2s); }
+    .usa .star-07:after  { @include animation(fadeIn 1s ease both 2.05s); }
+    .usa .star-05:before { @include animation(fadeIn 1s ease both 2.10s); }
+    .usa .star-02:after  { @include animation(fadeIn 1s ease both 2.15s); }
+    .usa .star-03:before { @include animation(fadeIn 1s ease both 2.20s); }
+
+    .usa .star-25:after  { @include animation(fadeIn 1s ease both 1s); }
+    .usa .star-23:before { @include animation(fadeIn 1s ease both 1.05s); }
+    .usa .star-20:after  { @include animation(fadeIn 1s ease both 1.10s); }
+    .usa .star-18:before { @include animation(fadeIn 1s ease both 1.15s); }
+    .usa .star-15:after  { @include animation(fadeIn 1s ease both 1.20s); }
+    .usa .star-13:before { @include animation(fadeIn 1s ease both 1.25s); }
+    .usa .star-10:after  { @include animation(fadeIn 1s ease both 1.30s); }
+    .usa .star-08:before { @include animation(fadeIn 1s ease both 1.35s); }
+    .usa .star-05:after  { @include animation(fadeIn 1s ease both 1.40s); }
+    .usa .star-10:before { @include animation(fadeIn 1s ease both 1.45s); }
+    .usa .star-12:after  { @include animation(fadeIn 1s ease both 1.50s); }
+    .usa .star-15:before { @include animation(fadeIn 1s ease both 1.55s); }
+    .usa .star-17:after  { @include animation(fadeIn 1s ease both 1.60s); }
+    .usa .star-20:before { @include animation(fadeIn 1s ease both 1.65s); }
+    .usa .star-22:after  { @include animation(fadeIn 1s ease both 1.70s); }
+    .usa .star-25:before { @include animation(fadeIn 1s ease both 1.75s); }
+    .usa .star-24:after  { @include animation(fadeIn 1s ease both 1.80s); }
+    .usa .star-22:before { @include animation(fadeIn 1s ease both 1.85s); }
+    .usa .star-19:after  { @include animation(fadeIn 1s ease both 1.90s); }
+    .usa .star-17:before { @include animation(fadeIn 1s ease both 1.95s); }
+    .usa .star-14:after  { @include animation(fadeIn 1s ease both 2s); }
+    .usa .star-19:before { @include animation(fadeIn 1s ease both 2.05s); }
+    .usa .star-21:after  { @include animation(fadeIn 1s ease both 2.10s); }
+    .usa .star-24:before { @include animation(fadeIn 1s ease both 2.15s); }
+    .usa .star-23:after  { @include animation(fadeIn 1s ease both 2.20s); }

@@ -1,0 +1,31 @@
+/*  Colombia
+    ========================================================================== */
+    .colombia { background-color: #ccbba0; }
+
+    .colombia .flag {
+        background-color: #FCD116;
+        @include animation(heightFlag 1s ease both);
+    }
+
+    .colombia .flag:before,
+    .colombia .flag:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+
+    .colombia .flag:before {
+        background: #003893;
+        top: 50%;
+        height: 25%;
+        z-index: 1;
+        @include animation(fadeInUp 0.75s ease-out 0.75s both);
+    }
+
+    .colombia .flag:after {
+        background: #CE1126;
+        bottom: 0;
+        height: 25%;
+        @include animation(fadeInDown 0.75s ease-out 0.95s both);
+    }

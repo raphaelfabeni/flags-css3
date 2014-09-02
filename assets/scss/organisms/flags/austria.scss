@@ -1,0 +1,29 @@
+/*  Austria
+    ========================================================================== */
+    .austria { background-color: #31d9cb; }
+
+    .austria .flag {
+        //opacity: 0.5;
+        background-color: #fff;
+        @include animation(heightFlag 1s ease both);
+    }
+
+    .austria .flag:before,
+    .austria .flag:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 33%;
+        background-color: #ED2939;
+    }
+
+    .austria .flag:before {
+        top: 0;
+        @include animation(fadeInUp 1s ease both 0.75s);
+    }
+
+    .austria .flag:after {
+        bottom: -1px;
+        @include animation(fadeInDown 1s ease both 0.75s);
+    }

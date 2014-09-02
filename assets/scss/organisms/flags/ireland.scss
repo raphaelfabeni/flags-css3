@@ -1,0 +1,29 @@
+/*  Ireland
+    ========================================================================== */
+    .ireland { background-color: #0d5eaf; }
+
+    .ireland .flag {
+        background-color: #fff;
+        @include animation(heightFlag 1s ease both);
+    }
+
+    .ireland .flag:before,
+    .ireland .flag:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 101%;
+        width: 33%;
+    }
+
+    .ireland .flag:before {
+        right: 0;
+        background-color: #FF7900;
+        @include animation(fadeInUp 0.75s ease 0.75s both);
+    }
+
+    .ireland .flag:after {
+        left: 0;
+        background-color: #009B48;
+        @include animation(fadeInDown 0.75s ease 0.75s both);
+    }

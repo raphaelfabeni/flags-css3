@@ -1,0 +1,29 @@
+# editorconfig.org
+root = false
+
+# Pra todos os arquivos
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Estilo de identação em arquivos HTML
+[*.html]
+indent_style = space
+indent_size = 4
+
+# Estilo de identação em arquivos CSS
+[*.css]
+indent_style = space
+indent_size = 4
+
+# Estilo de identação em arquivos JS dentro do diretório Scripts
+[*.js]
+indent_style = space
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false

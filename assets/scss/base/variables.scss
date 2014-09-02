@@ -1,0 +1,81 @@
+/*  ==========================================================================
+    Variables
+    ========================================================================== */
+
+    /*  ==========================================================================
+        Grid
+        ========================================================================== */
+        $total-columns : 12; // Total of columns
+        $column-width  : 60px; // Columns width
+        $gutter-width  : 20px; // Space between the columns
+        $grid-width    : 940px; // Width of the grid 
+        $breath        : 20px; // Option of lateral space for grid
+        $grid-full     : $grid-width + $breath + $breath; // Grid width with lateral space
+        $breakpoint    : 1200px; // Breakpoint for small devices
+        $space         : 25px; // Vertical space
+
+    /*  ==========================================================================
+        Colors
+        ========================================================================== */
+        $color-default:     #eee;
+        $color-primary:     #1972D1;
+        $color-secondary:   #5CB85C;
+        $color-terciary:    #D9534F;
+
+    /*  ==========================================================================
+        Forms
+        ========================================================================== */
+        $color-bg-form: #f7f7f7;
+        $color-border-form: #ddd;
+
+        /*  Inputs
+            ========================================================================== */
+            $color-border-input: #ccc;
+            $color-input: #aaa;
+
+            /*  Placeholder
+                ========================================================================== */
+                $placeholder-font-size: 14px;
+                $color-placeholder: #ccc;
+
+            /*  Required tip
+                ========================================================================== */
+                $color-required-tip: #999;
+                $required-tip-font-size: 12px;
+
+            /*  Required field
+                ========================================================================== */
+                $color-required: #666;
+                $required-font-size: 12px;
+
+    /*  ==========================================================================
+        Buttons
+        ========================================================================== */
+        $btn-font-size: 14px;
+
+        /*  Colors
+            ========================================================================== */
+
+            /*  Default
+                ========================================================================== */
+                $btn-bg: $color-default;
+                $btn-color: #666;
+                $btn-hover-bg: darken($btn-bg, 5%);
+
+            /*  Primary
+                ========================================================================== */
+                $btn-primary-bg: $color-primary;
+                $btn-primary-color: #fff;
+                $btn-primary-hover-bg: darken($btn-primary-bg, 5%);
+
+            /*  Success
+                ========================================================================== */
+                $btn-success-bg: $color-secondary;
+                $btn-success-color: #fff;
+                $btn-success-hover-bg: darken($btn-success-bg, 5%);
+
+            /*  Danger
+                ========================================================================== */
+                $btn-danger-bg: $color-terciary;
+                $btn-danger-color: #fff;
+                $btn-danger-hover-bg: darken($btn-danger-bg, 5%);

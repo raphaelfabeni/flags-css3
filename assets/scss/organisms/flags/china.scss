@@ -1,0 +1,54 @@
+/*  Chine
+    ========================================================================== */
+    .china { background-color: #99cea8; }
+
+    .china .flag {
+        background-color: #DE2910;
+        @include animation(rotateInUpRight 1s ease both);
+    }
+
+    .china .flag:before,
+    .china .flag:after,
+    .china .flag > div:before,
+    .china .flag > div:after,
+    .china .flag > div > div:before {
+        content: "★";
+        color: #FFDE00;
+        position: absolute;
+        font-size: 38px;
+    }
+
+    .china .flag:before {
+        font-size: 105px;
+        line-height: 105px;
+        left: 7%;
+        top: 15px;
+        @include animation(fadeInDown 0.5s ease 1.5s both);
+    }
+
+    .china .flag:after {
+        left: 30%;
+        top: 0;
+        @include transform(rotate(22deg));
+        @include animation(fadeInLeft 0.5s ease 0.5s both);
+    }
+
+    .china .flag > div:before {
+        left: 36%;
+        top: 10%;
+        @include transform(rotate(-21deg));
+        @include animation(fadeInLeft 0.5s ease 0.75s both);
+    }
+
+    .china .flag > div:after {
+        left: 36.5%;
+        top: 25%;
+        @include animation(fadeInLeft 0.5s ease 1s both);
+    }
+
+    .china .flag > div > div:before {
+        left: 30%;
+        top: 35%;
+        @include transform(rotate(23deg));
+        @include animation(fadeInLeft 0.5s ease 1.25s both);
+    }

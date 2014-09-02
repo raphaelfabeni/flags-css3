@@ -1,0 +1,144 @@
+/*  ==========================================================================
+    Mixins
+    ========================================================================== */
+
+    /*  Transition
+        ========================================================================== */
+        @mixin transition($parameters...) {
+            -webkit-transition: $parameters;
+               -moz-transition: $parameters;
+                 -o-transition: $parameters;
+                -ms-transition: $parameters;
+                    transition: $parameters;
+        }
+
+
+    /*  Box sizing
+        ========================================================================== */
+        @mixin box-sizing() {
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+
+    /*  Border radius
+        ========================================================================== */
+        @mixin border-radius($radius) {
+            -webkit-border-radius: $radius;
+               -moz-border-radius: $radius;
+                    border-radius: $radius;
+        }
+
+    /*  Box shadow
+        ========================================================================== */
+        @mixin box-shadow($parameters...) {
+            -webkit-box-shadow: $parameters;
+                    box-shadow: $parameters;
+        }
+
+
+    /*  Animation
+        ========================================================================== */
+        @mixin animation($parameters...) {
+            -webkit-animation: $parameters;
+               -moz-animation: $parameters;
+                -ms-animation: $parameters;
+                 -o-animation: $parameters;
+                    animation: $parameters;
+        }
+
+        @mixin keyframes($name) {
+            @-webkit-keyframes $name {
+                @content; 
+            }
+
+            @-moz-keyframes $name {
+                @content;
+            }
+
+            @-ms-keyframes $name {
+                @content;
+            }
+
+            @-o-keyframes $name {
+                @content;
+            }
+
+            @keyframes $name {
+                @content;
+            } 
+        }
+
+    /*  Transform
+        ========================================================================== */
+        @mixin transform($parameters) {
+            -webkit-transform: $parameters;
+               -moz-transform: $parameters;
+                 -o-transform: $parameters;
+                -ms-transform: $parameters;
+                    transform: $parameters;
+        }
+
+        %back-face {
+            -webkit-backface-visibility: visible;
+               -moz-backface-visibility: visible;
+                -ms-backface-visibility: visible;
+                 -o-backface-visibility: visible;
+                    backface-visibility: visible;
+        }
+
+    /*  Background-size
+        ========================================================================== */
+        @mixin background-size($value) {
+            -webkit-background-size: $value;
+               -moz-background-size: $value;
+                 -o-background-size: $value;
+                    background-size: $value;
+        }
+
+
+    /*  Gradients
+        ========================================================================== */
+
+        /*  Vertical gradient
+            ========================================================================== */
+            @mixin simple-vertical-gradient($startColor, $endColor) {
+                background-color: $startColor;
+                background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+                background: -webkit-linear-gradient(top, $startColor, $endColor);
+                background:    -moz-linear-gradient(top, $startColor, $endColor);
+                background:     -ms-linear-gradient(top, $startColor, $endColor);
+                background:      -o-linear-gradient(top, $startColor, $endColor);
+                background:         linear-gradient(to bottom, $startColor, $endColor);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
+            }
+
+            @mixin vertical-gradient($all, $colors...) {
+                background: -webkit-linear-gradient(top, $colors) $all;
+                background:    -moz-linear-gradient(top, $colors) $all;
+                background:      -o-linear-gradient(top, $colors) $all;
+                background:     -ms-linear-gradient(top, $colors) $all;
+                background:         linear-gradient(to bottom, $colors) $all;
+            }
+
+        /*  Horizontal Gradient
+            ========================================================================== */
+            @mixin simple-horizontal-gradient($startColor, $endColor) {
+                background-color: $startColor;
+                background: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+                background: -webkit-linear-gradient(left, $startColor, $endColor);
+                background:    -moz-linear-gradient(left, $startColor, $endColor);
+                background:     -ms-linear-gradient(left, $startColor, $endColor);
+                background:      -o-linear-gradient(left, $startColor, $endColor);
+                background:         linear-gradient(to right, $startColor, $endColor);
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
+            }
+
+            @mixin horizontal-gradient($colors...) {
+                background: -webkit-linear-gradient(left, $colors);
+                background:    -moz-linear-gradient(left, $colors);
+                background:      -o-linear-gradient(left, $colors);
+                background:     -ms-linear-gradient(left, $colors);
+                background:         linear-gradient(to right, $colors);
+            }

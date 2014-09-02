@@ -1,0 +1,29 @@
+/*  France
+    ========================================================================== */
+    .france { background-color: #b1e6c1; }
+
+    .france .flag {
+        background-color: #fff;
+        @include animation(widthFlag 1s ease both);
+    }
+
+    .france .flag:before,
+    .france .flag:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 33%;
+    }
+
+    .france .flag:before {
+        right: 0;
+        background-color: #ED2939;
+        @include animation(fadeInUp 0.75s ease 0.75s both);
+    }
+
+    .france .flag:after {
+        left: 0;
+        background-color: #002395;
+        @include animation(fadeInDown 0.75s ease 0.75s both);
+    }

@@ -1,0 +1,31 @@
+/*  Denmark
+    ========================================================================== */
+    .denmark { background-color: #afeeee; }
+
+    .denmark .flag {
+        background-color: #C60C30;
+        @include animation(zoomIn 1s ease both);
+    }
+
+    .denmark .flag:before,
+    .denmark .flag:after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .denmark .flag:before {
+        height: 44px;
+        top: 50%;
+        width: 100%;
+        margin-top: -22px;
+        @include animation(fadeInLeft 0.75s cubic-bezier(0.680, -0.550, 0.265, 1.550) both 0.75s);
+    }
+
+    .denmark .flag:after {
+        height: 101%;
+        width: 44px;
+        left: 38%;
+        margin-left: -22px;
+        @include animation(fadeInUp 0.75s cubic-bezier(0.680, -0.550, 0.265, 1.550) both 0.5s);
+    }

@@ -1,0 +1,31 @@
+/*  Sweden
+    ========================================================================== */
+    .sweden { background-color: #efbea1; }
+
+    .sweden .flag {
+        background-color: #006AA7;
+        @include animation(widthFlag 1s ease both);
+    }
+
+    .sweden .flag:before,
+    .sweden .flag:after {
+        content: '';
+        position: absolute;
+        background-color: #FECC00;
+    }
+
+    .sweden .flag:before {
+        height: 56px;
+        top: 50%;
+        width: 100%;
+        margin-top: -28px;
+        @include animation(fadeInRight 0.75s ease both 0.75s);
+    }
+
+    .sweden .flag:after {
+        height: 101%;
+        width: 56px;
+        left: 38%;
+        margin-left: -32px;
+        @include animation(fadeInDown 0.75s ease both 0.5s);
+    }

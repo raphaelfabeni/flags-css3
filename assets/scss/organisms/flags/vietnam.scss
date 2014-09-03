@@ -1,0 +1,23 @@
+/*  Vietnam
+    ========================================================================== */
+    .vietnam {
+        background-color: #abdef5;
+    }
+
+    .vietnam .flag {
+        background-color: #CE1126;
+        @include animation(fadeInUp 0.5s ease-in both);
+    }
+
+    .vietnam .flag > div:after {
+        color: #FCD116;
+        position: absolute;
+        content: "★";
+        font-size: 250px;
+        height: 250px;
+        line-height: 1;
+        left: 50%;
+        top: 50%;
+        margin: -125px 0 0 -110px;
+        @include animation(zoomIn 0.75s ease-out 0.75s both);
+    }

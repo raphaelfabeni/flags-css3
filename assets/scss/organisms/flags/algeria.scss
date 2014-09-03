@@ -25,12 +25,13 @@
         content: '';
         position: absolute;
         z-index: 3;
-        content: "★";
+        //content: "★";
+        content: "\2605";
         font-size: 93px;
         line-height: 1;
         left: 48%;
         color: #D21034;
         top: 33%;
         @include transform(rotate(17deg));
-        @include animation(starAlgeria 0.75s ease both 1s);
+        @include animation(fadeInRight 0.75s ease both 1s);
     }

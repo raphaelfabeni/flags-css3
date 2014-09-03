@@ -12,7 +12,8 @@
 	.honduras .flag:before,
     .honduras .flag div:after,
     .honduras .flag div:before {
-    	content: "★";
+    	//content: "★";
+        content: "\2605";
     	position: absolute;
     	font-size: 33px;
     	line-height: 33px;

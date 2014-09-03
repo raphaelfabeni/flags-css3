@@ -21,7 +21,8 @@
 
     .usa .flag .star:before,
     .usa .flag .star:after {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         font-size: 19px;
         color: #fff;
         position: absolute;

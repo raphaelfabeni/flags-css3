@@ -29,7 +29,8 @@
 
     .venezuela .star:before,
     .venezuela .star:after {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         color: #fff;
         font-size: 33px;
         line-height: 33px;

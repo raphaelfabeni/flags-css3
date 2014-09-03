@@ -29,7 +29,8 @@
     }
     
     .ghana .flag > div:before {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         position: absolute;
         left: 50%;
         top: 50%;

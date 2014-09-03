@@ -3,7 +3,6 @@
     .austria { background-color: #31d9cb; }
 
     .austria .flag {
-        //opacity: 0.5;
         background-color: #fff;
         @include animation(heightFlag 1s ease both);
     }

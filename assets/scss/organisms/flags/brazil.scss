@@ -62,7 +62,8 @@
     }
 
     .brazil .star:after {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         font-size: 10px;
         line-height: 10px;
         color: #fff;

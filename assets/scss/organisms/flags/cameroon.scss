@@ -33,7 +33,8 @@
     .cameroon .flag > div:after {
         color: #FCD116;
         position: absolute;
-        content: "★";
+        //content: "★";
+        content: "\2605";
         font-size: 100px;
         height: 100px;
         line-height: 1;

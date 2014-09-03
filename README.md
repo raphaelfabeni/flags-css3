@@ -9,3 +9,6 @@ Thanks for [Daniel Eden](https://twitter.com/_dte) for some animations in awesom
 
 Inspired by [A Single Div](http://lynnandtonic.github.io/a-single-div/), despite the fact I didn't worry about using only one div.
 
+## License
+
+MIT License © Raphael Fabeni

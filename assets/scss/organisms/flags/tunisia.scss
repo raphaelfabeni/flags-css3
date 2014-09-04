@@ -29,7 +29,8 @@
     }
 
     .tunisia .flag:after {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         color: #E30A17;
         position: absolute;
         font-size: 85px;

@@ -12,7 +12,8 @@
     .vietnam .flag > div:after {
         color: #FCD116;
         position: absolute;
-        content: "★";
+        //content: "★";
+        content: "\2605";
         font-size: 250px;
         height: 250px;
         line-height: 1;

@@ -20,7 +20,8 @@
     }
 
     .turkey .flag:after {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         color: #fff;
         position: absolute;
         font-size: 92px;

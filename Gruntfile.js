@@ -18,7 +18,7 @@ module.exports = function( grunt ) {
             // Dev
             dev: {
                 options: {
-                    compass: true,
+                    compass: false,
                     style: 'compressed',
                     noCache: true
                 },

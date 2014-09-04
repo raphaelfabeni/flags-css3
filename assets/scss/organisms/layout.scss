@@ -23,22 +23,3 @@
          -o-animation-play-state: running;
             animation-play-state: running;
 }
-
-// var elements = $('.element');
-// $(window).on('scroll', function() {
-//   var halfHeight = window.innerHeight / 2,
-//       size = 100,
-//       rangePosition = {
-//         top: halfHeight - (size/2),
-//         bottom: halfHeight + (size/2)
-//       }
-//   /**/
-//   for( var i = 0; i< elements.length; i++ ) {
-//     var aloha = elements[i].getBoundingClientRect();
-//     if( aloha.top + aloha.height > rangePosition.top && aloha.top < rangePosition.bottom  ) {
-//       elements[i].classList.add('active');
-//     }else{
-//       elements[i].classList.remove('active');
-//     }
-//   }  
-// });

@@ -12,7 +12,8 @@
     .china .flag > div:before,
     .china .flag > div:after,
     .china .flag > div > div:before {
-        content: "★";
+        //content: "★";
+        content: "\2605";
         color: #FFDE00;
         position: absolute;
         font-size: 38px;

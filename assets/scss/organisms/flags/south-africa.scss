@@ -19,7 +19,7 @@
         top: 0;
         right: -102px;
         background-color: #DE3831;
-        @include box-shadow(-26px 9px 0 10px #fff,-540px 50px 0 #000,-540px 40px 0 #000,-504px 50px 0 #ffb612,-504px 13px 0 #ffb612);
+        @include box-shadow(-26px 9px 0 10px #fff,-560px 50px 0 #000,-560px 40px 0 #000,-524px 50px 0 #ffb612,-524px 13px 0 #ffb612);
         @include transform(skewx(57deg));
         @include animation(enterSouthAfrica 1.25s ease 0.5s both);
         z-index: 1;
@@ -29,7 +29,7 @@
         bottom: 0;
         right: -102px;
         background-color: #002395;
-        @include box-shadow(-26px -9px 0 10px #fff,-540px 0px 0 #000,-540px -50px 0 #000,-505px -13px 0 #ffb612,-505px -51px 0 #ffb612);
+        @include box-shadow(-26px -9px 0 10px #fff,-560px 0px 0 #000,-560px -50px 0 #000,-525px -13px 0 #ffb612,-525px -51px 0 #ffb612);
         @include transform(skewx(-57deg));
         @include animation(enterSouthAfrica 1.25s ease both 0.75s);
     }

@@ -19,43 +19,17 @@
         top: 0;
         right: -102px;
         background-color: #DE3831;
-        @include box-shadow(-26px 9px 0 10px #fff);
+        @include box-shadow(-26px 9px 0 10px #fff,-560px 50px 0 #000,-560px 50px 0 #000,-524px 50px 0 #ffb612,-524px 13px 0 #ffb612);
         @include transform(skewx(57deg));
         @include animation(enterSouthAfrica 1.25s ease 0.5s both);
+        z-index: 1;
     }
 
     .south-africa .flag:after {
         bottom: 0;
         right: -102px;
         background-color: #002395;
-        @include box-shadow(-26px -9px 0 10px #fff);
+        @include box-shadow(-26px -9px 0 10px #fff,-560px 0px 0 #000,-560px -51px 0 #000,-525px -13px 0 #ffb612,-525px -51px 0 #ffb612);
         @include transform(skewx(-57deg));
         @include animation(enterSouthAfrica 1.25s ease both 0.75s);
-    }
-
-    .south-africa .flag > div {
-        border-bottom: 110px solid transparent;
-        border-left: 170px solid #ffb612;
-        border-top: 110px solid transparent;
-        content: '';
-        height: 0;
-        margin-top: 37px;
-        position: relative;
-        width: 0;
-        z-index: 0;
-        @include animation(fadeInLeft 1s ease both 0.5s);
-    }
-
-    .south-africa .flag > div:after {
-        content: '';
-        border-bottom: 115px solid transparent;
-        border-left: 175px solid #000;
-        border-top: 115px solid transparent;
-        height: 0;
-        width: 0;
-        position: absolute;
-        left: -205px;
-        top: -115px;
-        z-index: 1;
-        @include animation(fadeInLeft 1s ease both 0.75s);
     }

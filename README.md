@@ -15,6 +15,11 @@ Thanks for [Daniel Eden](https://twitter.com/_dte) for some animations in awesom
 
 Inspired by [A Single Div](http://lynnandtonic.github.io/a-single-div/), despite the fact I didn't worry about using only one div.
 
+## CSS 
+CSS stands for Cascading Style Sheets.
+CSS describes how HTML elements are to be displayed.
+3 Types of CSS Styles: Inline, External and Internal.
+
 ## License
 
 MIT License © Raphael Fabeni
